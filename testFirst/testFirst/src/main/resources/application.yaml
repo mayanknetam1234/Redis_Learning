@@ -1,7 +1,7 @@
-
-
-
 spring:
+  debug: true
+  config:
+      import: classpath:env.properties
   main:
     allow-bean-definition-overriding: true
   application:
@@ -11,10 +11,5 @@ spring:
     port: 6379
 
 weatherapi:
-  base-url: "https://api.weatherapi.com/v1"
-  key: "0e3f6c2db0364a15a2941201250712"
-
-
-
-
-
+  base-url: ${WEATHER_API_BASE_URL}
+  key: ${WEATHER_API_KEY}

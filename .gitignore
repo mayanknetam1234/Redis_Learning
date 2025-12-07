@@ -1,22 +1,50 @@
-# Ignore environment files anywhere in the repo
- # Common dotenv patterns
- .env
- .env.*
- *.env
- *.env.*
- .envrc
- .direnv/
+############################
+# Maven / Spring Boot
+############################
+target/
+!.mvn/wrapper/maven-wrapper.jar
+**/target/
 
- # Env directories
- env/
- **/env/
+############################
+# IntelliJ IDEA
+############################
+.idea/
+*.iml
+*.iws
+*.ipr
 
- # Properties-style env files
- env.properties
- **/env.properties
+############################
+# OS Files
+############################
+.DS_Store
+Thumbs.db
 
- # Keep example/template env files tracked
- !.env.example
- !.env*.example
- !.env.template
- !.env.sample
+############################
+# Log files
+############################
+*.log
+
+############################
+# Environment Files
+############################
+# Common dotenv patterns
+.env
+.env.*
+*.env
+*.env.*
+.envrc
+.direnv/
+
+# Env directories
+env/
+**/env/
+
+# Properties-style env files
+env.properties
+**/env.properties
+
+# Exception: keep example/template env files
+!.env.example
+!.env*.example
+!.env.template
+!.env.sample
