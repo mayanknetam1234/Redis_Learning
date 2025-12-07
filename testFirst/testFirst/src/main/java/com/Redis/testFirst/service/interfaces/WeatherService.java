@@ -1,4 +1,4 @@
-package com.Redis.testFirst.service.impl;
+package com.Redis.testFirst.service.interfaces;
 
 import com.Redis.testFirst.dto.WeatherResponse;
 

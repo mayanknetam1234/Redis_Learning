@@ -1,7 +1,7 @@
 package com.Redis.testFirst.controller;
 
 import com.Redis.testFirst.dto.WeatherResponse;
-import com.Redis.testFirst.service.impl.WeatherService;
+import com.Redis.testFirst.service.interfaces.WeatherService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
